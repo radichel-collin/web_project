@@ -8,7 +8,7 @@ function View1() {
                 <h1> View One Page</h1>
                 <div>
                     <p>
-                        welcome to hell fuckers
+                        welcome to the world
                     </p>
                 </div>
             </div>

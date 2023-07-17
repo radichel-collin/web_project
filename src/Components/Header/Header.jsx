@@ -21,10 +21,10 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/View1"> View 1</a>
+              <a href="/View1"> View 1000</a>
             </li>
             <li>
-              <a href="/View2">View 2</a>
+              <a href="/View2">View 200</a>
             </li>
           </ul>
         </nav>
