@@ -24,9 +24,9 @@ export default function ButtonAppBar() {
 
   const links = [
 <Link to="/View1">View 1</Link>,
-'Link 2',
-'Link 3',
-'Link 4'
+<Link to="/View1">View 1</Link>,
+<Link to="/View1">View 1</Link>,
+<Link to="/View1">View 1</Link>
   ];
 
   return (
