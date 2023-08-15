@@ -21,10 +21,11 @@ export default function ButtonAppBar() {
   };
 
   const links = [
-<Link to="/View1">View 1</Link>,
-<Link to="/View1">View 1</Link>,
-<Link to="/View1">View 1</Link>,
-<Link to="/View1">View 1</Link>
+    <Link to="/View1">Forms</Link>,
+    <Link to="/View1">Tables</Link>,
+    <Link to="/View1">Tooltips</Link>,
+    <Link to="/View1">Cards</Link>,
+    <Link to="/View1">Carousels</Link>
   ];
 
   return (
@@ -38,21 +39,21 @@ export default function ButtonAppBar() {
             aria-label="Website home link"
             sx={{ mr: 2 }}
           >
-           <HomeRoundedIcon />
+            <HomeRoundedIcon />
           </IconButton>
           <nav
-          aria-label='primary'
+            aria-label='primary'
           >
-          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-            Accessibility Examples
-            <IconButton
-            onClick={toggleExpand}
-            aria-expanded={expanded} // Setting the aria-expanded attribute
-            aria-controls="link-list"
-            >
-              {expanded ? <ExpandMoreIcon /> : <ExpandLessIcon />}
-          </IconButton>
-          </Typography>
+            <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+              Accessibility Examples
+              <IconButton
+                onClick={toggleExpand}
+                aria-expanded={expanded} // Setting the aria-expanded attribute
+                aria-controls="link-list"
+              >
+                {expanded ? <ExpandMoreIcon /> : <ExpandLessIcon />}
+              </IconButton>
+            </Typography>
           </nav>
         </Toolbar>
       </AppBar>
@@ -61,18 +62,18 @@ export default function ButtonAppBar() {
         sx={{
           position: 'absolute',
           marginLeft: '300px'
-            }}
+        }}
       >
-      {expanded && (
-        <List>
-          {links.map((link, index) => (
-            <ListItem key={index}>
-              <ListItemText primary={link} />
-            </ListItem>
-          ))}
-          </List> 
-      )}
+        {expanded && (
+          <List>
+            {links.map((link, index) => (
+              <ListItem key={index}>
+                <ListItemText primary={link} />
+              </ListItem>
+            ))}
+          </List>
+        )}
       </Paper>
-      </Box>
+    </Box>
   );
 }
