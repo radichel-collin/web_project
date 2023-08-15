@@ -4,8 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-// import MenuList from '@mui/material/MenuList';
-// import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -60,6 +58,10 @@ export default function ButtonAppBar() {
       </AppBar>
       <Paper
         id="link-list"
+        sx={{
+          position: 'absolute',
+          marginLeft: '300px'
+            }}
       >
       {expanded && (
         <List>
