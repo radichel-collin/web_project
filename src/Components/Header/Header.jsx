@@ -34,7 +34,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton
-            size="small"
+            size="large"
             edge="start"
             color="inherit"
             aria-label="Website home link"
@@ -42,8 +42,11 @@ export default function ButtonAppBar() {
           >
            <HomeRoundedIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Accessiblility Examples
+          <nav
+          aria-label='primary'
+          >
+          <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+            Accessibility Examples
             <IconButton
             onClick={toggleExpand}
             aria-expanded={expanded} // Setting the aria-expanded attribute
@@ -52,6 +55,7 @@ export default function ButtonAppBar() {
               {expanded ? <ExpandMoreIcon /> : <ExpandLessIcon />}
           </IconButton>
           </Typography>
+          </nav>
         </Toolbar>
       </AppBar>
       <Paper
