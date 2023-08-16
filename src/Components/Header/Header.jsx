@@ -14,8 +14,13 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
 export default function ButtonAppBar() {
+ 
+  
   const [expanded, setExpanded] = useState(false)
 
+
+  // function to toggle aria-expanded attribute
+  // on a button that controls expandable content
   const toggleExpand = () => {
     setExpanded(!expanded);
   };
