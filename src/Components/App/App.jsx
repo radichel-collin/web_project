@@ -1,7 +1,7 @@
 // import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ButtonAppBar from "../Header/Header";
-import View1 from "../View1/View1";
+import Forms from "../Forms/Forms";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ButtonAppBar />}/>
 
-          <Route path="/View1" element={<View1 />}/>
+          <Route path="/Forms" element={<Forms />}/>
 
         </Routes>        
       </BrowserRouter>

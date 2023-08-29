@@ -15,9 +15,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 export default function ButtonAppBar() {
  
-  
   const [expanded, setExpanded] = useState(false)
-
 
   // function to toggle aria-expanded attribute
   // on a button that controls expandable content
@@ -26,7 +24,7 @@ export default function ButtonAppBar() {
   };
 
   const links = [
-    <Link to="/View1">Forms</Link>,
+    <Link to="/Forms">Forms</Link>,
     <Link to="/View1">Tables</Link>,
     <Link to="/View1">Tooltips</Link>,
     <Link to="/View1">Cards</Link>,
