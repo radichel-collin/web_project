@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ButtonAppBar from "../Header/Header";
 import Forms from "../Forms/Forms";
+import Tables from "../Tables/Tables";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
           <Route path="/" element={<ButtonAppBar />}/>
 
           <Route path="/Forms" element={<Forms />}/>
+
+          <Route path="/Tables" element={<Tables />}/>
 
         </Routes>        
       </BrowserRouter>

@@ -25,7 +25,7 @@ export default function ButtonAppBar() {
 
   const links = [
     <Link to="/Forms">Forms</Link>,
-    <Link to="/View1">Tables</Link>,
+    <Link to="/Tables">Tables</Link>,
     <Link to="/View1">Tooltips</Link>,
     <Link to="/View1">Cards</Link>,
     <Link to="/View1">Carousels</Link>
