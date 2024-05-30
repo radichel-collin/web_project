@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import Paper from '@mui/material/Paper';
@@ -13,7 +12,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
-export default function ButtonAppBar() {
+export default function Header() {
  
   const [expanded, setExpanded] = useState(false)
 
@@ -35,20 +34,13 @@ export default function ButtonAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="Website home link"
-            sx={{ mr: 2 }}
-          >
-            <HomeRoundedIcon />
-          </IconButton>
           <nav
             aria-label='primary'
           >
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-              Accessibility Examples
+              <a href='/' style={{textDecoration: 'none', color: 'inherit' }}>
+              Accessibile Web Components
+              </a>
               <IconButton
                 onClick={toggleExpand}
                 aria-expanded={expanded} // Setting the aria-expanded attribute

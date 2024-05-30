@@ -1,6 +1,6 @@
 // import { useSelector } from 'react-redux';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ButtonAppBar from "../Header/Header";
+import Homepage from "../Homepage/Homepage";
 import Forms from "../Forms/Forms";
 import Tables from "../Tables/Tables";
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ButtonAppBar />}/>
+          <Route path="/" element={<Homepage />}/>
 
           <Route path="/Forms" element={<Forms />}/>
 

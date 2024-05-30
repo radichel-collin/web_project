@@ -17,3 +17,7 @@ li {
   justify-content: flex-start;
   background-color: bisque;
 }
+
+.home_link {
+  text-decoration: none;
+}

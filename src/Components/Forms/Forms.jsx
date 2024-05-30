@@ -4,9 +4,13 @@ import InputLabel from '@mui/material/InputLabel';
 import Input from '@mui/material/Input';
 import FormHelperText from '@mui/material/FormHelperText';
 import './Forms.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 function Forms() {
     return (
+        <>
+        <Header />
         <FormControl
             sx={{
                 position: 'absolute',
@@ -18,6 +22,8 @@ function Forms() {
             <Input id="email-label" aria-describedby="instructions-text" />
             <FormHelperText id="instructions-text">We'll never share your email.</FormHelperText>
         </FormControl>
+        <Footer />
+        </>
     )
 }
 
