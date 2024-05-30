@@ -38,9 +38,9 @@ export default function Header() {
             aria-label='primary'
           >
             <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-              <a href='/' style={{textDecoration: 'none', color: 'inherit' }}>
+              <Link to="/" style={{textDecoration: 'none', color: 'inherit' }} >
               Accessibile Web Components
-              </a>
+              </Link>
               <IconButton
                 onClick={toggleExpand}
                 aria-expanded={expanded} // Setting the aria-expanded attribute
